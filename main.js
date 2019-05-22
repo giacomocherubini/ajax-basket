@@ -8,8 +8,14 @@ $(document).ready(function() {
     },
     'success': function(data) {
       console.log(data);
-      var array_oggetti = JSON.parse(data);
-      console.log(array_oggetti);
+    for (var i = 0; i < data.response.length; i++) {
+      console.log(data.response[i].playerCode);
+      console.log(data.response[i].fouls);
+      console.log(data.response[i].points);
+      console.log(data.response[i].rebounds);
+      console.log(data.response[i].threePoints);
+      console.log(data.response[i].twoPoints);
+    }
     },
     'error': function() {
       alert('si e verificato un errore');
