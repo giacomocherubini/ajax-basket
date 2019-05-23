@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" type="text/javascript">
+
+    </script>
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
@@ -10,6 +13,16 @@
     <div class="contenitore">
 
     </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="card">
+        <h1>{{PlayerCode}}</h1>
+        <div class="proprieta">{{Fouls}}</div>
+        <div class="proprieta">{{Points}}</div>
+        <div class="proprieta">{{Rebounds}}</div>
+        <div class="proprieta">{{ThreePoints}}</div>
+        <div class="proprieta">{{TwoPoints}}</div>
+      </div>
+    </script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
